@@ -19,7 +19,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #f8234a;
+  color: #da5c19;
   outline: none;
   text-decoration: none;
 }
@@ -86,13 +86,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:focus {
-  background: #e0072f;
+  background: #da5c19;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #e0072f;
+  background: #da5c19;
   color: #fff;
 }
 
@@ -1259,7 +1259,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe button:hover {
-  background: #e0072f;
+  background: #da5c19;
 }
 
 @media (max-width: 460px) {
@@ -1321,7 +1321,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: #da5c19;
 }
 
 #buy-tickets #buy-ticket-modal input, #buy-tickets #buy-ticket-modal select {
@@ -1339,7 +1339,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;
+  background-color: #da5c19;
 }
 
 /*--------------------------------------------------------------
@@ -1478,7 +1478,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .php-email-form button[type="submit"]:hover {
-  background: #e0072f;
+  background: #da5c19;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1634,7 +1634,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #e0072f;
+  background: #da5c19;
 }
 
 #footer .copyright {
