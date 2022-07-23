@@ -1417,12 +1417,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (min-width: 768px) {
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-}
 
 #contact .php-email-form .validate {
   display: none;
