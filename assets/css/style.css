@@ -28,20 +28,57 @@ btn-check:focus+.btn, .btn:focus {
   box-shadow: none;
 }
 
+.contact-me{
+  background-color: #2ba1cd;
+  background-image: url("../img/contact.jpg");
+}
+
 .drophover:hover{
   background-color: #0880ae !important;
   color:#040919 !important;
   font-weight: bold !important;
 }
 
+#demo{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+
+.hero{
+  margin-top: 80px;
+}
 
 a {
   color: #0880ae;
   text-decoration: none;
   transition: 0.5s;
 }
+
 .btn-color {
+  background-color: white;
+  color:#0880ae !important;
+}
+
+.btn-color:hover{
   background-color: #0880ae;
+  color: white !important;
+}
+
+.btn-main{
+  background-color:#112363;
+  color: white;
+}
+
+.btn-main:hover{
+  color: white;
+  background-color:#da5c19;
+}
+
+
+.radius{
+  border-radius: 50px;
 }
 
 a:hover,
@@ -181,6 +218,10 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+}
+
+.heading{
+  background-color: rgba(6, 12, 34, 0.98);
 }
 
 @media (max-width: 991px) {
@@ -533,6 +574,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
 }
+
 
 @media (min-width: 1024px) {
   #intro {
@@ -1174,7 +1216,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-right: 1px solid #e0e5fa;
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
   height: 160px;
 }
 
