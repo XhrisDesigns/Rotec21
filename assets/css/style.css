@@ -23,6 +23,30 @@ body {
   box-shadow: none !important;
 }
 
+
+/* Countdown */
+
+
+/* Countdown */
+
+.countdown div {
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+  padding: 15px 0;
+  background:  #0880ae;
+  color: white;
+}
+ .countdown div h3 {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+ .countdown div h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 btn-check:focus+.btn, .btn:focus {
   outline: 0;
   box-shadow: none;

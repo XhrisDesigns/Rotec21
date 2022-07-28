@@ -1,92 +1,90 @@
-/**
-* Template Name: TheEvent - v3.0.0
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-!(function($) {
+!(function ($) {
   "use strict";
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
+      $(".back-to-top").fadeIn("slow");
     } else {
-      $('.back-to-top').fadeOut('slow');
+      $(".back-to-top").fadeOut("slow");
     }
   });
-  $('.back-to-top').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
+  $(".back-to-top").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1500,
+      "easeInOutExpo"
+    );
     return false;
   });
 
   // Header fixed on scroll
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
+      $("#header").addClass("header-scrolled");
     } else {
-      $('#header').removeClass('header-scrolled');
+      $("#header").removeClass("header-scrolled");
     }
   });
 
   if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
+    $("#header").addClass("header-scrolled");
   }
 
   // Initialize Venobox
-  $(window).on('load', function() {
-    $('.venobox').venobox({
-      bgcolor: '',
-      overlayColor: 'rgba(6, 12, 34, 0.85)',
-      closeBackground: '',
-      closeColor: '#fff',
-      share: false
+  $(window).on("load", function () {
+    $(".venobox").venobox({
+      bgcolor: "",
+      overlayColor: "rgba(6, 12, 34, 0.85)",
+      closeBackground: "",
+      closeColor: "#fff",
+      share: false,
     });
   });
 
   // Initiate superfish on nav menu
-  $('.nav-menu').superfish({
+  $(".nav-menu").superfish({
     animation: {
-      opacity: 'show'
+      opacity: "show",
     },
-    speed: 400
+    speed: 400,
   });
 
   // Mobile Navigation
-  if ($('#nav-menu-container').length) {
-    var $mobile_nav = $('#nav-menu-container').clone().prop({
-      id: 'mobile-nav'
+  if ($("#nav-menu-container").length) {
+    var $mobile_nav = $("#nav-menu-container").clone().prop({
+      id: "mobile-nav",
     });
-    $mobile_nav.find('> ul').attr({
-      'class': '',
-      'id': ''
+    $mobile_nav.find("> ul").attr({
+      class: "",
+      id: "",
     });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
-    $('body').append('<div id="mobile-body-overly"></div>');
-    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
+    $("body").append($mobile_nav);
+    $("body").prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
+    $("body").append('<div id="mobile-body-overly"></div>');
+    $("#mobile-nav").find(".menu-has-children").prepend('<i class="fa fa-chevron-down"></i>');
 
-    $(document).on('click', '.menu-has-children i', function(e) {
-      $(this).next().toggleClass('menu-item-active');
-      $(this).nextAll('ul').eq(0).slideToggle();
+    $(document).on("click", ".menu-has-children i", function (e) {
+      $(this).next().toggleClass("menu-item-active");
+      $(this).nextAll("ul").eq(0).slideToggle();
       $(this).toggleClass("fa-chevron-up fa-chevron-down");
     });
 
-    $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-      $('#mobile-body-overly').toggle();
+    $(document).on("click", "#mobile-nav-toggle", function (e) {
+      $("body").toggleClass("mobile-nav-active");
+      $("#mobile-nav-toggle i").toggleClass("fa-times fa-bars");
+      $("#mobile-body-overly").toggle();
     });
 
-    $(document).click(function(e) {
+    $(document).click(function (e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
+        if ($("body").hasClass("mobile-nav-active")) {
+          $("body").removeClass("mobile-nav-active");
+          $("#mobile-nav-toggle i").toggleClass("fa-times fa-bars");
+          $("#mobile-body-overly").fadeOut();
         }
       }
     });
@@ -95,35 +93,39 @@
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  var scrolltoOffset = $('#header').outerHeight() - 21;
+  var scrolltoOffset = $("#header").outerHeight() - 21;
   if (window.matchMedia("(max-width: 991px)").matches) {
     scrolltoOffset += 20;
   }
-  $(document).on('click', '.nav-menu a, #mobile-nav a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  $(document).on("click", ".nav-menu a, #mobile-nav a, .scrollto", function (e) {
+    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
         e.preventDefault();
 
         var scrollto = target.offset().top - scrolltoOffset;
 
-        if ($(this).attr("href") == '#header') {
+        if ($(this).attr("href") == "#header") {
           scrollto = 0;
         }
 
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        $("html, body").animate(
+          {
+            scrollTop: scrollto,
+          },
+          1500,
+          "easeInOutExpo"
+        );
 
-        if ($(this).parents('.nav-menu').length) {
-          $('.nav-menu .menu-active').removeClass('menu-active');
-          $(this).closest('li').addClass('menu-active');
+        if ($(this).parents(".nav-menu").length) {
+          $(".nav-menu .menu-active").removeClass("menu-active");
+          $(this).closest("li").addClass("menu-active");
         }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
+        if ($("body").hasClass("mobile-nav-active")) {
+          $("body").removeClass("mobile-nav-active");
+          $("#mobile-nav-toggle i").toggleClass("fa-times fa-bars");
+          $("#mobile-body-overly").fadeOut();
         }
         return false;
       }
@@ -131,37 +133,44 @@
   });
 
   // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
         var scrollto = $(initial_nav).offset().top - scrolltoOffset;
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        $("html, body").animate(
+          {
+            scrollTop: scrollto,
+          },
+          1500,
+          "easeInOutExpo"
+        );
       }
     }
   });
 
   // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, #mobile-nav');
+  var nav_sections = $("section");
+  var main_nav = $(".nav-menu, #mobile-nav");
 
-  $(window).on('scroll', function() {
+  $(window).on("scroll", function () {
     var cur_pos = $(this).scrollTop() + 200;
 
-    nav_sections.each(function() {
+    nav_sections.each(function () {
       var top = $(this).offset().top,
         bottom = top + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
         if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('menu-active');
+          main_nav.find("li").removeClass("menu-active");
         }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('menu-active');
+        main_nav
+          .find('a[href="#' + $(this).attr("id") + '"]')
+          .parent("li")
+          .addClass("menu-active");
       }
       if (cur_pos < 300) {
-        $(".nav-menu li:first").addClass('menu-active');
+        $(".nav-menu li:first").addClass("menu-active");
       }
     });
   });
@@ -174,67 +183,55 @@
     center: true,
     responsive: {
       0: {
-        items: 1
+        items: 1,
       },
       768: {
-        items: 3
+        items: 3,
       },
       992: {
-        items: 4
+        items: 4,
       },
       1200: {
-        items: 5
-      }
-    }
+        items: 5,
+      },
+    },
   });
 
   // Buy tickets select the ticket type on click
-  $('#buy-ticket-modal').on('show.bs.modal', function(event) {
+  $("#buy-ticket-modal").on("show.bs.modal", function (event) {
     var button = $(event.relatedTarget);
-    var ticketType = button.data('ticket-type');
+    var ticketType = button.data("ticket-type");
     var modal = $(this);
-    modal.find('#ticket-type').val(ticketType);
+    modal.find("#ticket-type").val(ticketType);
   });
 
   // Init AOS
   function aos_init() {
     AOS.init({
       duration: 1000,
-      once: true
+      once: true,
     });
   }
-  $(window).on('load', function() {
+  $(window).on("load", function () {
     aos_init();
   });
 
+  /**
+   * Countdown timer
+   */
+  let countdown = document.querySelector(".countdown");
+  const output = countdown.innerHTML;
+
+  const countDownDate = function () {
+    let timeleft = new Date(countdown.getAttribute("data-count")).getTime() - new Date().getTime();
+
+    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+    countdown.innerHTML = output.replace("%d", days).replace("%h", hours).replace("%m", minutes).replace("%s", seconds);
+  };
+  countDownDate();
+  setInterval(countDownDate, 1000);
 })(jQuery);
-
-
-// Set the date we're counting down to
-var countDownDate = new Date("Nov 11, 2022 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
