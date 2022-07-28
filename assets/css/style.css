@@ -15,6 +15,26 @@ body {
   font-family: monospace;
 }
 
+.dropdown-toggle::after {
+  display:none;
+}
+
+.xhadow{
+  box-shadow: none !important;
+}
+
+btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.drophover:hover{
+  background-color: #0880ae !important;
+  color:#040919 !important;
+  font-weight: bold !important;
+}
+
+
 a {
   color: #0880ae;
   text-decoration: none;
@@ -176,6 +196,11 @@ h6 {
   #header .container {
     max-width: 100%;
   }
+}
+
+.dropback{
+  background: rgba(6, 12, 34, 0.98) !important;
+
 }
 
 #header.header-scrolled,
@@ -375,6 +400,8 @@ h6 {
   border-radius: 3px;
 }
 
+
+
 .nav-menu ul li:hover > a {
   background: #0880ae;
   color: #fff;
@@ -501,7 +528,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/intro-bg.jpg) top center;
+  background: url(../img/technology.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;

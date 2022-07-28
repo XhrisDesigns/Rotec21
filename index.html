@@ -15,6 +15,9 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
     rel="stylesheet">
@@ -40,20 +43,76 @@
 
       <!-- Logo -->
       <div id="logo" class="pull-left d-flex">
-        <a href="index.html" class="scrollto fw-bold h4 text-white"><img loading="lazy" src="assets/img/logo.png" alt="rotec logo" title="rotec logo"> ROTEC</a>
+        <a href="index.html" class="scrollto fw-bold h4 text-white"><img loading="lazy" src="assets/img/logo.png"
+            alt="rotec logo" title="rotec logo"> ROTEC</a>
       </div>
 
       <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#venue">Venue</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#supporters">Sponsors</a></li>
+        <ul class="nav-menu ">
+
+          <!-- About Section -->
+          <li class=""><a href="#about">About</a></li>
+
+
+          <!-- Contact Section-->
           <li><a href="#contact">Contact</a></li>
-          <li class="buy-tickets"><a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdjNCYGPLVp0ntcwjSXaY7_v2eV05l_IMmS4NbkX1FZTDjZog/viewform?usp=send_form">Register</a>
+
+
+          <!-- Services Section-->
+          <li class="dropdown text-light d-none d-lg-flex">
+            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu dropback xhadow">
+              <li><a class="dropdown-item text-light p-2" type="button" href="#">Training</a></li>
+              <li><a class="dropdown-item text-light p-2" type="button" href="#">Mentorship</a></li>
+              <li><a class="dropdown-item text-light p-2" type="button" href="#">Scholarship</a></li>
+            </ul>
+          </li>
+
+          <!-- Mobile Services -->
+          <div class="dropdown d-block d-lg-none">
+            <button class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services <span><i class="bi bi-caret-down-fill"></i></span>
+            </button>
+            <ul class="dropdown-menu dropback border mx-2">
+              <li><a class="dropdown-item drophover" href="#">Training</a></li>
+              <li><a class="dropdown-item drophover" href="#">Mentorship</a></li>
+              <li><a class="dropdown-item drophover" href="#">Scholarship</a></li>
+            </ul>
+          </div><!-- End of Services Section-->
+
+
+          <!-- Events Section-->
+          <li class="dropdown text-light d-none d-lg-flex m-0">
+            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu dropback xhadow">
+              <li><a class="dropdown-item text-light p-2 fit" href="./rotec21.html" type="button" href="#">Rotec 21</a>
+              </li>
+              <li><a class="dropdown-item text-light p-2 fit" type="button" href="#">Rotec 22</a></li>
+              <li><a class="dropdown-item text-light p-2 fit" type="button" href="#">Rotec 23</a></li>
+            </ul>
+          </li>
+
+          <!-- Mobile Events -->
+          <div class="dropdown d-block d-lg-none">
+            <button class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Events <span><i class="bi bi-caret-down-fill"></i></span>
+            </button>
+            <ul class="dropdown-menu dropback border mx-2">
+              <li><a class="dropdown-item drophover" href="./pages/rotec21.html">Rotec 21</a></li>
+              <li><a class="dropdown-item drophover" href="#">Rotec 22</a></li>
+              <li><a class="dropdown-item drophover" href="#">Rotec 23</a></li>
+            </ul>
+          </div>
+          <!--End of  Events Section-->
+
+          <!-- Buy Section -->
+          <li class="buy-tickets"><a href="#">Buy & Sell</a>
           </li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -64,11 +123,13 @@
   <section id="intro">
     <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0 font-stylish">ROYAL<br><span>TECH</span> & CREATIVE FAIR</h1>
-      <p class="mb-4 pb-0">26th - 28th November, 2021.</p>
+      <p class="mb-4 pb-0">ROTEC 2022 IS COMING</p>
       <a href="https://www.instagram.com/tv/CV-71z0jSFm/?igshid=YmMyMTA2M2Y=" class="play-btn mb-4"></a>
       <a href="#about" class="about-btn scrollto">About The Event</a>
     </div>
   </section><!-- End Intro Section -->
+
+
 
   <main id="main">
 
@@ -78,11 +139,10 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>About The Event</h2>
-            <p>Royal Tech and creative fair is an annual event that is being organize by the Royal Levites Fellowship
-              international, an arm of the Royal House Of Grace international church. Our aim for the fair is to
-              contribute to the development of technology and creativity in our society. Technology and creativity is
-              currently ruling the world. Therefore it is crucial that will take advantage of all technological and
-              creative opportunies to give us an edge in a very competitive and tech savvy world.</p>
+            <p>ROTEC is an annual Technology and creative fair, that encourages and enhances creativity and innovation
+              in Nigeria and sub-Sahara Africa.
+              ROTEC showcases and exhibits the best of tech and creative products for start ups and existing businesses.
+            </p>
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
@@ -96,586 +156,6 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Speakers Section ======= -->
-    <section id="speakers">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Event Speakers</h2>
-          <p>Here are some of our speakers</p>
-        </div>
-
-        <div class="row">
-
-          <!-- Mr. Ibifuro Asawo -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img loading="lazy" src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Mr. Ibifuro Asawo</a></h3>
-                <p>Founder Cinfores Limited</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pst. Chinedu Udechukwu -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img loading="lazy" src="assets/img/speakers/9.jpg" alt="Speaker 6" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Pst. Chinedu Udechukwu</a></h3>
-                <p>Pastor of MFM (Phc.)</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mr. Reuben Odum -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img loading="lazy" src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Mr. Reuben Odum</a></h3>
-                <p>Founder of Graceworth Limited</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bio-Ibogomo Ebikienmo -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img loading="lazy" src="assets/img/speakers/7.jpg" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Bio-Ibogomo Ebikienmo</a></h3>
-                <p>Robotics & Web Developer</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Engr. R. Tombari Sibe -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img loading="lazy" src="assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Engr. R. Tombari Sibe</a></h3>
-                <p>C.E.O Digital Footprints</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mr. Ololade Otayemi -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img loading="lazy" src="assets/img/speakers/8.jpg" alt="Speaker 5" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Mr. Ololade Otayemi</a></h3>
-                <p>Founder Obra Mobile Device</p>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Barr. Tegu Benson -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img loading="lazy" src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Barr. Tegu Benson</a></h3>
-                <p>Tegu & B Legal Practitioners</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Daniel Ikashi Addey -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img loading="lazy" src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Daniel Ikashi Addey</a></h3>
-                <p>Digital Assets</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mr Geoffery Okolorie -->
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img loading="lazy" src="assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Mr Geoffery Okolorie </a></h3>
-                <p>Digital Forensics Expert</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End Speakers Section -->
-
-    <!-- ======= Schedule Section ======= -->
-    <section id="schedule" class="section-with-bg d-none">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Event Schedule</h2>
-          <p>Here is our event schedule</p>
-        </div>
-
-        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Day 3</a>
-          </li>
-        </ul>
-
-        <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-          necessitatibus voluptatem quis labore perspiciatis quia.</h3>
-
-        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>09:30 AM</time></div>
-              <div class="col-md-10">
-                <h4>Registration</h4>
-                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Keynote <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 1 -->
-
-          <!-- Schdule Day 2 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-          <!-- Schdule Day 3 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img loading="lazy" src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-        </div>
-
-      </div>
-
-    </section>
-    <!-- End Schedule Section -->
-
-    <!-- ======= Venue Section ======= -->
-    <section id="venue">
-
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Event Venue</h2>
-          <p>Event venue location info and gallery</p>
-        </div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 venue-map">
-            <iframe width="600" height="500" id="gmap_canvas"
-              src="https://maps.google.com/maps?q=royal%20house%20of%20Grace&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          </div>
-
-          <div class="col-lg-6 venue-info">
-            <div class="row justify-content-center">
-              <div class="col-11 col-lg-8">
-                <h3>No. 13 Graceland Avenue, PHC.</h3>
-                <p>Royal House of Grace International Church, Graceland Avenue is the venue for the Rotec event for
-                  2021.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/1.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/3.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/4.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/5.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/6.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/7.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="assets/img/venue-gallery/8.jpg" class="venobox" data-gall="venue-gallery">
-                <img loading="lazy" src="assets/img/venue-gallery/8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End Venue Section -->
-
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Gallery</h2>
-          <p>Check our gallery from the recent events</p>
-        </div>
-      </div>
-
-      <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
-        <a href="assets/img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/1.jpg" alt=""></a>
-        <a href="assets/img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/2.jpg" alt=""></a>
-        <a href="assets/img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/3.jpg" alt=""></a>
-        <a href="assets/img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/4.jpg" alt=""></a>
-        <a href="assets/img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/5.jpg" alt=""></a>
-        <a href="assets/img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/6.jpg" alt=""></a>
-        <a href="assets/img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/7.jpg" alt=""></a>
-        <a href="assets/img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img loading="lazy"
-            src="assets/img/gallery/8.jpg" alt=""></a>
-      </div>
-
-    </section><!-- End Gallery Section -->
-
-    <!-- ======= Supporters Section ======= -->
-    <section id="supporters" class="section-with-bg">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Sponsors</h2>
-        </div>
-
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/1.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/2.png" class="img-fluid w-100" alt="royal house">
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/3.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <!--  -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/4.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <!-- Bole sea food -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/5.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <!-- GraceWorth -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/6.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <!-- Cinfores -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/7.png" class="img-fluid" alt="Cinfores">
-            </div>
-          </div>
-
-          <!-- Alpha Sphinx -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/8.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <!-- Digital Print -->
-          <div class="col-lg-4 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img loading="lazy" src="assets/img/supporters/9.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Sponsors Section -->
 
     <!-- =======  F.A.Q Section ======= -->
     <section id="faq">
@@ -804,7 +284,8 @@
             <div class="contact-phone">
               <h3>Phone Number</h3>
               <small>Click to speak to us directly</small>
-              <p><a href="tel:+2348099863614" class="btn btn-color text-light"><i class="fa fa-phone fs-6 m-1 text-light"></i> +234 809 9863 614</a></p>
+              <p><a href="tel:+2348099863614" class="btn btn-color text-light"><i
+                    class="fa fa-phone fs-6 m-1 text-light"></i> +234 809 9863 614</a></p>
             </div>
           </div>
 
@@ -812,45 +293,13 @@
             <div class="contact-email">
               <h3>Email</h3>
               <small>Click to send us a message</small>
-              <p><a href="mailto:royallevites2016@gmail.com" class="btn btn-color text-light"><span><i class="fa fa-envelope fs-6 m-1 text-light"></i></span>royallevites2016@gmail.com</a></p>
+              <p><a href="mailto:royallevites2016@gmail.com" class="btn btn-color text-light"><span><i
+                      class="fa fa-envelope fs-6 m-1 text-light"></i></span>royallevites2016@gmail.com</a></p>
             </div>
           </div>
 
 
         </div>
-
-        <!-- <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group col-md-6 mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validate"></div>
-            </div>
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div> -->
 
       </div>
     </section><!-- End Contact Section -->
@@ -865,7 +314,7 @@
 
           <div class="col-md-6 footer-info">
             <div class="d-flex align-items-center">
-              <img loading="lazy" src="assets/img/logo.png" alt="Rotec Logo">
+              <img loading="lazy" src="assets/img/logo.png" alt="Rotec Logo" aria-label="true">
               <h5 class="fw-bolder text-light display-6 font-stylish">ROTEC</h5>
             </div>
             <p>We know it's possible that many prospects, exhibitors, participators, both in close and far locations,
@@ -886,8 +335,10 @@
             </p>
 
             <div class="social-links">
-              <a href="https://facebook.com/royallevitesfellowship/" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://instagram.com/rotec21/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.facebook.com/rotecfair" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://instagram.com/rotecfair/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://twitter.com/rotecfair/" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://youtube.com/rotecfair/" class="youtube"><i class="fa fa-youtube-play"></i></a>
             </div>
 
           </div>
